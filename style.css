@@ -252,7 +252,23 @@ footer p {
     .meu-nome {
         position: absolute;
         top: 50%;
-        left: 41%;
+        left: 7%;
     }
+
+    
+}
+
+@media (max-width: 1300px) {
+    h1 {
+        font-size: 63px;
+    }
+}
+
+@media (max-width: 992px) {
+    .meu-nome {
+        top: 50%;
+        left: 7%;
+    }
+    
 }
 
