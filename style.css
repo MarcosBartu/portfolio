@@ -4,15 +4,24 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     
+    
+}
+
+body {
+    min-width: 1604px;
+    min-height: 2844px;
+    background-color: #000000;    
 }
 
 .caixa-principal {
     height: 100vh;
     width: 100%;
-    background-image: url(./img/backgroundd.png);
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     background-color: #191919;
+    
+    
+
 }
 
 nav {
@@ -24,10 +33,11 @@ nav {
     padding-top: 25px;
     position: fixed;
     right: 0;
-    left: 0;
-    
-    
+    left: 0; 
+    z-index: 10;
 }
+
+
 
 .portfolio {
     color: #ffffff;
@@ -64,10 +74,23 @@ nav ul a {
     text-decoration: none;
 }
 
+
+.img-back {
+    display: flex;
+    float: left;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: inherit;
+    
+    
+}
 .meu-nome {
     position: relative;
     top: 50%;
     left: 7%;
+    float: right;
+    width: 50%; 
+    top: 420px;
     
 }
 
@@ -75,6 +98,7 @@ h1 {
     color: white;
     font-size: 75px;
     font-weight: 400;
+    
 }
 
 h1 span {
@@ -91,6 +115,7 @@ h1 span {
     color: rgb(172, 243, 237)
 }
 
+
 section {
     display: flex;
     align-items: center;
@@ -100,6 +125,7 @@ section {
 
 section img {
     height: 400px;
+    object-fit: cover;
     border-radius: 45%;
     border: 2px solid rgb(0, 255, 234);
     margin-right: 30px;
@@ -137,6 +163,12 @@ section div button:hover {
     border: 1px solid rgb(6 123 114);
     transition: 0,5s;
 }
+
+section div button a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 .projetos {
     background-color: #191919;
@@ -196,6 +228,7 @@ section div button:hover {
 }
 
 footer {
+    background-size: cover;
     background-color: #000000;
     padding-top: 100px;
     padding-bottom: 120px;
@@ -203,6 +236,10 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: sticky;
+
+
+    
 }
 
 footer h5 {
@@ -220,6 +257,8 @@ footer p {
 .social {
     display: flex;
     gap: 20px;
+    
+
 }
 
 .social img {
@@ -244,31 +283,11 @@ footer p {
     background-color: rgb(15, 206, 190);
 }
 
-@media (max-width: 1300px) {
-    .caixa-principal {
-    background-image: none;
-    }
 
-    .meu-nome {
-        position: absolute;
-        top: 50%;
-        left: 7%;
-    }
-
+@media(min-width: 992px) and (max-width: 1919px) {
     
 }
-
-@media (max-width: 1300px) {
-    h1 {
-        font-size: 63px;
-    }
-}
-
-@media (max-width: 992px) {
-    .meu-nome {
-        top: 50%;
-        left: 7%;
-    }
     
-}
+
+
 
